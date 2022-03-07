@@ -4,52 +4,57 @@
   box-sizing: border-box;
 }
 
-/* UTILITIES */
+/* utitlities */
 
-body{
-  font-family: 'Roboto', sans-serif;
-}
-
-.clearfix::after{
+.clearfix{
   content: ' ';
   display: table;
   clear: both;
 }
 
-.container{
-  width: 75%;
-  margin: 20px auto;
-  padding-top: 20px;
+main{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+  padding-bottom: 35px;
 }
 
-.container .annuncio{
+.card{
   width: 32%;
-  position: relative;
+  margin: 20px 10px;
   float: left;
-  margin-left: 1%;
-  margin-bottom: 35px;
-  
 }
 
-.annuncio img{
+.card-img{
+  width: 100%;
+  position: relative;
+}
+
+/* IMG */
+
+.card .card-img .img-default{
   width: 100%;
 }
 
-.annuncio .img-hover{
+.card .card-img .img-hover{
+  width: 100%;
   display: none;
 }
 
-.annuncio:hover .img-hover{
+.card-text{
+  width: 100%; 
+}
+
+.card:hover .img-hover{
   display:block;
 }
 
-.annuncio:hover .img-default{
+.card:hover .img-default{
   display: none;
 }
+/* dettagli annuncio */
 
-/* DETTAGLI INSERZIONE */
-
-.annuncio .heart{
+.card-img .heart{
   width: 45px;
   height: 45px;
   background-color: white;
@@ -61,23 +66,23 @@ body{
   line-height: 45px;
 }
 
-.annuncio .discount{
+.card-img .discount{
   position: absolute;
   height: 35px;
   background-color: #eb0037;
   left: 0;
-  bottom: 100px;
+  bottom: 35px;
 }
 
-.annuncio .sostenibile{
+.card-img .sostenibile{
   
   height: 35px;
   background-color: #00875a;
   left: 60px;
-  bottom: 100px;
+  bottom: 35px;
 }
 
-.annuncio .sostenibile, .discount{
+.card-img .sostenibile, .discount{
   position: absolute;
   text-align: center;
   line-height: 35px;
@@ -85,14 +90,13 @@ body{
   color: white;
 }
 
-.annuncio .sostenibile.no-discount{
+.card-img .sostenibile.no-discount{
   left: 0;
 }
 
+/* descrizione card-text */
 
-/* descrizione articolo */
-
-.article-description{
+.card-text{
   width: 100%;
   margin-top: 10px;
 }
@@ -101,13 +105,13 @@ h4{
   text-transform: uppercase;
 }
 
-.annuncio .price-discount{
+.card .price-discount{
   font-weight: bold;
   font-size: 0.8rem;
   color: red;
 }
 
-.annuncio .full-price{
+.card .full-price{
   color: black;
   text-decoration:line-through;
 }
