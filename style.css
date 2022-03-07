@@ -35,6 +35,18 @@ body{
   width: 100%;
 }
 
+.annuncio .img-hover{
+  display: none;
+}
+
+.annuncio:hover .img-hover{
+  display:block;
+}
+
+.annuncio:hover .img-default{
+  display: none;
+}
+
 /* DETTAGLI INSERZIONE */
 
 .annuncio .heart{
