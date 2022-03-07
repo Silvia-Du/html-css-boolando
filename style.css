@@ -13,8 +13,8 @@
 }
 
 .container{
-  background-color: rgb(150, 112, 185);
-  width: 70%;
+  background-color: rgb(99, 51, 143);
+  width: 75%;
   margin: 15px auto;
   padding-top: 20px;
 }
@@ -25,21 +25,54 @@
 
 
 .container .row{
-  width: 85%;
-  height: 550px;
+  width: 100%;
   background-color: rgb(102, 53, 148);
-  margin-bottom: 20px;
+  
   margin: 0 auto;
 }
 
 .container .row .outfit{
   width: 32%;
-  height: 100%;
+  height: 630px;
   float: left;
-  border: 1px solid black;
   background-position: center;
   background-size: cover;
+  margin-bottom: 20px;
+  position: relative;
 }
+
+.row .outfit .heart{
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 45px;
+}
+
+.row .outfit .discount{
+  width: 50px;
+  height: 35px;
+  background-color: #eb0037;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+
+.row .outfit .sostenibile{
+  width: 150px;
+  height: 35px;
+  background-color: #00875a;
+  position: absolute;
+  left: 60px;
+  bottom: 25px;
+
+}
+
+/* FIRST ROW */
 
 .outfit.center{
   margin: 0 2%;
@@ -52,4 +85,18 @@
 
 .row .outfit.right{
   background-image: url(./assets/img/3.webp);
+}
+
+/* SeECOND ROW */
+
+.container :nth-child(2) .outfit.left{
+  background-image: url(./assets/img/4.webp);
+}
+
+.container :nth-child(2) .outfit.center{
+  background-image: url(./assets/img/5.webp);
+}
+
+.container :nth-child(2) .outfit.right{
+  background-image: url(./assets/img/6.webp);
 }
