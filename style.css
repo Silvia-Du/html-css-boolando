@@ -6,6 +6,10 @@
 
 /* UTILITIES */
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 .clearfix::after{
   content: ' ';
   display: table;
@@ -40,6 +44,7 @@
   margin-bottom: 20px;
   position: relative;
 }
+
 .row .outfit .heart{
   width: 45px;
   height: 45px;
@@ -57,8 +62,7 @@
   height: 35px;
   background-color: #eb0037;
   left: 0;
-  bottom: 25px;
-  
+  bottom: 25px; 
 }
 
 .row .outfit .sostenibile{
@@ -67,7 +71,6 @@
   background-color: #00875a;
   left: 60px;
   bottom: 25px;
-  
 }
 
 .outfit .sostenibile, .discount{
@@ -76,6 +79,10 @@
   line-height: 35px;
   padding: 0px 6px;
   color: white;
+}
+
+.second.row .outfit.right .sostenibile{
+  left: 0;
 }
 
 /* FIRST ROW */
@@ -106,3 +113,4 @@
 .container :nth-child(2) .outfit.right{
   background-image: url(./assets/img/6.webp);
 }
+
