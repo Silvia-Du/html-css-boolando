@@ -27,7 +27,7 @@ body{
   position: relative;
   float: left;
   margin-left: 1%;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   
 }
 
@@ -54,7 +54,7 @@ body{
   height: 35px;
   background-color: #eb0037;
   left: 0;
-  bottom: 125px;
+  bottom: 100px;
 }
 
 .annuncio .sostenibile{
@@ -62,7 +62,7 @@ body{
   height: 35px;
   background-color: #00875a;
   left: 60px;
-  bottom: 125px;
+  bottom: 100px;
 }
 
 .annuncio .sostenibile, .discount{
