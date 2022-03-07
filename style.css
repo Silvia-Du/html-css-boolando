@@ -17,28 +17,27 @@ body{
 }
 
 .container{
-  background-color: rgb(99, 51, 143);
   width: 75%;
-  height: 800px;
-  margin: 15px auto;
+  margin: 20px auto;
   padding-top: 20px;
 }
 
-
-
-/* MAIN */
-/* 
-.container .outfit{
+.container .annuncio{
   width: 32%;
-  height: 630px;
-  float: left;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 20px;
   position: relative;
+  float: left;
+  margin-left: 1%;
+  margin-bottom: 25px;
+  
 }
-/* 
-.outfit .heart{
+
+.annuncio img{
+  width: 100%;
+}
+
+/* DETTAGLI INSERZIONE */
+
+.annuncio .heart{
   width: 45px;
   height: 45px;
   background-color: white;
@@ -50,23 +49,23 @@ body{
   line-height: 45px;
 }
 
-.outfit .discount{
-  
+.annuncio .discount{
+  position: absolute;
   height: 35px;
   background-color: #eb0037;
   left: 0;
-  bottom: 25px; 
+  bottom: 125px;
 }
 
-.outfit .sostenibile{
+.annuncio .sostenibile{
   
   height: 35px;
   background-color: #00875a;
   left: 60px;
-  bottom: 25px;
+  bottom: 125px;
 }
 
-.outfit .sostenibile, .discount{
+.annuncio .sostenibile, .discount{
   position: absolute;
   text-align: center;
   line-height: 35px;
@@ -74,15 +73,29 @@ body{
   color: white;
 }
 
-.row .outfit.right .sostenibile.no-discount{
+.annuncio .sostenibile.no-discount{
   left: 0;
 }
 
+
+/* DESCRIZIONE ARTICOLO */
 .article-description{
   width: 100%;
-  height: 50px;
-  background-color: #00875a;
+  margin-top: 10px;
 }
 
-*/
+h4{
+  text-transform: uppercase;
+}
+
+.annuncio .price-discount{
+  color: red;
+}
+
+.annuncio .full-price{
+  color: black;
+  text-decoration:line-through;
+}
+
+
 
