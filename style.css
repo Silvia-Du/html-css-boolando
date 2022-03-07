@@ -90,7 +90,8 @@ body{
 }
 
 
-/* DESCRIZIONE ARTICOLO */
+/* descrizione articolo */
+
 .article-description{
   width: 100%;
   margin-top: 10px;
@@ -101,6 +102,8 @@ h4{
 }
 
 .annuncio .price-discount{
+  font-weight: bold;
+  font-size: 0.8rem;
   color: red;
 }
 
